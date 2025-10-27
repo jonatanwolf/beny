@@ -4,8 +4,8 @@ import { HandHeart, Copy, Share2 } from "lucide-react";
 import { toast } from "sonner";
 
 const DonateSection = () => {
-  const pixKey = "SEU_PIX_AQUI"; // Substituir pela chave Pix real
-  const vaquinhaUrl = "https://www.vakinha.com.br/beny"; // Substituir pela URL real
+  const pixKey = "066996986083"; // Substituir pela chave Pix real
+  const vaquinhaUrl = "https://www.vakinha.com.br/vaquinha/ajude-antonio-benicio-nessa-luta"; // Substituir pela URL real
 
   const copyPix = () => {
     navigator.clipboard.writeText(pixKey);
