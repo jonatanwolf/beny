@@ -5,6 +5,7 @@ import { toast } from "sonner";
 
 const DonateSection = () => {
   const pixKey = "066996986083"; // Substituir pela chave Pix real
+  const rifaUrl = "https://r321.app/s/KaumQpvA";
   const vaquinhaUrl = "https://www.vakinha.com.br/vaquinha/ajude-antonio-benicio-nessa-luta"; // Substituir pela URL real
 
   const copyPix = () => {
@@ -54,12 +55,35 @@ const DonateSection = () => {
 
               <div className="bg-primary/10 p-8 rounded-2xl space-y-6">
                 <h3 className="text-2xl font-bold text-primary flex items-center justify-center">
-                  🩵 Doe qualquer valor:
+                  Sua ajuda faz toda a diferença! 🩵
                 </h3>
 
                 <div className="space-y-4">
                   <div className="bg-card p-6 rounded-xl border border-primary/20">
+                    <h4 className="font-semibold text-lg mb-3 text-card-foreground">Rifa Solidária:</h4>
+                    <span className="mb-3 block">
+                      Compre uma rifa por apenas R$ 10,00 e concorra a:
+                    </span>
+                    <ul className="list-disc list-inside mb-4 mt-2 text-card-foreground">
+                      <li>1ª - R$ 500,00 no PIX</li>
+                      <li>2º - Conjunto de Joias de Prata 925 Legítimo</li>
+                      <li>3º - Kit Malbec</li>
+                      <li>4º - Kit 4 Panos de Prato de Luxo</li>
+                    </ul>
+                    <Button
+                      onClick={() => window.open(rifaUrl, '_blank')}
+                      className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                      size="lg"
+                    >
+                      Acessar Rifa Solidária
+                    </Button>
+                  </div>
+
+                  <div className="bg-card p-6 rounded-xl border border-primary/20">
                     <h4 className="font-semibold text-lg mb-3 text-card-foreground">Via Pix:</h4>
+                    <span className="mb-3 block">
+                      Faça uma doação solidária diretamente via PIX utilizando a chave (celular) abaixo.
+                    </span>
                     <div className="flex flex-col sm:flex-row gap-3 items-center">
                       <code className="bg-muted px-4 py-3 rounded-lg flex-1 text-center text-sm break-all">
                         {pixKey}
@@ -70,13 +94,16 @@ const DonateSection = () => {
                         className="w-full sm:w-auto"
                       >
                         <Copy className="w-4 h-4 mr-2" />
-                        Copiar Pix
+                        Copiar Chave PIX
                       </Button>
                     </div>
                   </div>
 
                   <div className="bg-card p-6 rounded-xl border border-primary/20">
                     <h4 className="font-semibold text-lg mb-3 text-card-foreground">Vaquinha online:</h4>
+                    <span className="mb-3 block">
+                      Caso prefira, você pode fazer uma doação através da Vakinha oficial.
+                    </span>
                     <Button 
                       onClick={() => window.open(vaquinhaUrl, '_blank')}
                       className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
